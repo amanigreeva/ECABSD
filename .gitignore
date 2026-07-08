@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+venv310/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Testing
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Data (large, gitignored — use scripts/download_pdbbind.py to regenerate)
+data/raw/
+data/processed/
+data/db5_processed/
+data/db5_splits.csv
+data/BM5-clean/
+
+# Large binary archives
+*.zip
+*.pth
+
+# Checkpoints — keep only best_model_v3.pt
+checkpoints/*
+!checkpoints/best_model_v3.pt
+
+# Cache directories
+checkpoints/.cache/
+
+# Logs — keep training history
+logs/*
+!logs/training_history_v3.json
+
+# Results — keep reference outputs
+results/*
+!results/benchmark.csv
+!results/benchmark.json
+!results/metrics.json
+!results/confusion_matrix.png
+!results/kfold_results.json
+!results/predictions_1AY7_A.csv
+!results/predictions_1AY7_A.json
+!results/1AY7/
+!results/1BRS/
+!results/2PTC/
+
+# PDB files — sample kept via data/sample/
+*.pdb
+!data/sample/*.pdb
+
+# Archive
+models/archive/
